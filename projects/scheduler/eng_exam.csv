@@ -1,0 +1,195 @@
+Course Code,Course Name,Course Instructor,Location,Duration,Priority,Class
+AER210H1,Vector Calc. & Fluid Mechanics,Pauline Ledbetter,MY-315,2.5,3,23
+AER301H1,Dynamics,Benita Sharp,GB-304,2.5,1,30
+AER307H1,Aerodynamics,Anthony Beall,BA-1180,2.5,3,14
+AER315H1,Combustion Processes,Margaret Harris,MY-380,2.5,3,25
+AER501H1,Comp.Struc.Mec.& Design Opt.,Etta Hyatt,BA-2159,2.5,3,14
+AER506H1,Spacecraft Dynamics & Control,Brandon Batie,WB-119,2.5,3,3
+AER507H1,Introduction To Fusion Energy,Donald Reilly,MY-360,2.5,2,10
+AER525H1,Robotics,Roy Barker,BA-2185,2.5,3,26
+APS110H1,Eng.Chemistry & Materials Sci.,Danielle Anderson,EX-200,2.5,3,24
+APS111H1,Eng.Strategies & Practice I,Wendy Dixie,EX-100,2.5,3,31
+APS113Y1,Eng.Strategies & Practice,Jc Gardner,EX-310,2.5,2,26
+APS160H1,Mechanics,Carlton Huie,EX-320,2.5,3,14
+APS163H1,Calculus For Engineers Ii,David Nichols,WB-116,2.5,3,13
+APS164H1,Intro Chem: Matls Perspective,Lisa Thompson,EX-300,2.5,3,18
+APS234H1,Entrepreneurship And Small Bus,Jacqueline Braud,MY-360,2.5,3,16
+APS301H1,Tech Society & Biosphere I,Ida Zelechowski,SF-3202,2.5,3,15
+APS343H1,Engineering Leadership,Grant Delgado,HA-403,2.5,3,9
+APS360H1,Artificial Intelligence Fund.,Wallace Freeney,HA-403,2.5,3,30
+APS502H1,Financial Engineering,Kari Downs,EX-300,2.5,3,21
+APS510H1,Tech.&Org.:Global Energy Syst.,Owen Tate,WB-130,2.5,3,27
+BME344H1,"Model.,Dyn., & Control Bio Sys",Walter Lutz,WB-119,2.5,3,26
+BME350H1,Bio Sys Eng I: Organ Systems,Ilene Pedigo,BA-1130,2.5,3,21
+BME395H1,Bio Sys Eng Ii: Cells & Tissue,Robin Marler,MY-380,2.5,3,6
+BME428H1,Bio Sys Eng Iv: Comp. Sys. Bio,Brandy Stambaugh,HA-410,2.5,3,13
+BME440H1,Biomed. Eng. Tech. & Invest.,Joseph Mcfarland,BA-2159,2.5,3,25
+BME445H1,Neural Bioelectricity,Genevieve Crocker,BA-2159,2.5,3,17
+BME455H1,Cellular & Molecular Bioeng.Ii,Wanda Jones,WB-119,2.5,3,12
+BME460H1,Biomat & Med Device Prod Dev.,Thelma Roth,WB-219,2.5,3,14
+BME595H1,Biomedical Imaging,Kenneth Leal,HA-316,2.5,1,22
+CHE112H1,Physical Chemistry,Bobby Martin,MY-150,2.5,3,21
+CHE208H1,Process Engineering,Tiffani Brown,HA-403,2.5,3,27
+CHE211H1,Fluid Mechanics,Lilian Mcconnell,MS-3153,2.5,1,13
+CHE220H1,Applied Chemistry I-Inor.Chem,Ruth Gray,BA-1130,2.5,3,21
+CHE221H1,Calculus Iii,Larry James,EX-320,2.5,3,11
+CHE249H1,Engineering Economic Analysis,Rosemary Yu,SF-3202,2.5,3,19
+CHE260H1,Thermodynamics,John Cady,MY-150,2.5,3,16
+CHE323H1,Engineering Thermodynamics,Lawrence Favela,SF-3202,2.5,3,7
+CHE324H1,Process Design,James Cooper,MS-2172,2.5,2,12
+CHE332H1,Reaction Kinetics,Matthew Rymer,WB-116,2.5,3,15
+CHE353H1,Engineering Biology,Perry Cheek,BA-2175,2.5,3,5
+CHE374H1,Eco.Ana.& Dec.Making,Tim Andes,EX-300,2.5,3,14
+CHE391H1,Organic Chem.&Bioche,Bonnie Haley,MY-330,2.5,3,2
+CHE441H1,Engineering Materials,Sarah Martin,BA-2159,2.5,1,24
+CHE451H1,Petroleum Processing,Willie Burman,WB-119,2.5,3,6
+CHE562H1,Applied Polymer Chemistry,Lori Edwards,WB-219,2.5,3,13
+CHE565H1,Aqueous Process Engineering,Joseph Blanco,BA-2185,2.5,3,9
+CHE566H1,Elems Of Nuclear Engineering,John Rayfield,EX-300,2.5,3,30
+CIV100H1,Mechanics,George Turner,EX-100,2.5,3,11
+CIV102H1,Struct. & Materials,Abraham Langley,GB-303,2.5,2,1
+CIV220H1,Urban Engineering Ecology,Kenneth Phillips,BA-1160,2.5,3,8
+CIV280H1,Management Of Construction,Susan Heckard,ZZ-VLAD,2.5,3,24
+CIV300H1,Terrestrial Energy Systems,Carol Williams,MY-150,2.5,3,0
+CIV312H1,Steel& Timber Design,Bailey Jones,BA-2165,2.5,2,17
+CIV331H1,Transport I:Intro Trans. Sys.,Robert Mancuso,EX-300,2.5,3,8
+CIV342H1,Treatment Processes,Maria Carter,EX-320,2.5,3,32
+CIV355H1,Urban Operations Research,William Mckinney,HA-410,2.5,1,18
+CIV375H1,Building Science,Mabel Davies,ZZ-VLAD,2.5,3,3
+CIV401H1,Design & Optimization Of Hydro,Diane Carter,MY-360,2.5,2,8
+CIV416H1,Reinf Concrete Ii,Steven Leach,BA-1130,2.5,3,33
+CIV420H1,Construction Eng,Randy Reitz,GB-304,2.5,3,30
+CIV514H1,Concrete Construct.,Laura Pauling,MY-330,2.5,2,6
+CIV515H1,Intro To Structural Dynamics,Pauline Clark,WB-219,2.5,3,10
+CIV517H1,Prestressed Concrete,Scott Green,HA-316,2.5,2,21
+CIV519H1,Structural Ana. Ii,Amanda Villalobos,MY-150,2.5,3,26
+CIV521H1,Rock Mechanics,Everett Moore,MY-315,2.5,2,4
+CIV531H1,Transport Iii-Plann.,Richard Coleman,HA-403,2.5,3,19
+CIV541H1,Environmental Biotechnology,Debra Leclaire,BA-1170,2.5,3,35
+CIV549H1,Groundwater Flow&Con,Barbara Hawkins,BA-1130,2.5,1,11
+CIV575H1,Building Science,Sharon Wimberly,ZZ-VLAD,2.5,3,34
+CIV578H1,Design Of Building Enclosures,Melanie Brauner,MY-360,2.5,3,8
+CME210H1,Solid Mechanics I,Robert Hernandez,EX-310,2.5,3,28
+CME261H1,Engineering Mathematics I,Esther Greene,EX-200,2.5,3,9
+CME270H1,Fluid Mechanics I,Daisy Floyd,EX-310,2.5,3,0
+CME321H1,Geotechnical Engineering I,Denise Jennings,MY-330,2.5,3,2
+CME368H1,Eng. Economics&Decision Making,Berniece Olivas,SF-3202,2.5,3,33
+ECE212H1,Circuit Analysis,Carolyn Ibara,MY-150,2.5,3,5
+ECE241H1,Digital Systems,David Maxwell,MY-150,2.5,3,7
+ECE244H1,Programming Fundamentals,Donald Vincent,EX-200,2.5,3,2
+ECE253H1,Digital & Comput.Sys,Horace Eisenberg,EX-300,2.5,3,15
+ECE302H1,Probability & Applications,Vada Budzynski,EX-100,2.5,3,28
+ECE311H1,Intro To Control Systems,Arnold Nealon,MY-150,2.5,2,7
+ECE314H1,Fund. Of Elec. Energy Systems,Mary Thompson,HA-316,2.5,1,34
+ECE316H1,Communication Systems,Rosa Mefford,MY-380,2.5,3,35
+ECE320H1,Fields And Waves,Heidi Johnson,WY-119,2.5,3,5
+ECE326H1,Programming Languages,Michael Bernard,BA-1180,2.5,3,23
+ECE331H1,Analog Electronics,Maria Peoples,WB-119,2.5,3,1
+ECE334H1,Digital Electronics,Janet Rivers,GB-304,2.5,3,31
+ECE335H1,Intro. To Electronic Devices,Jose Shaw,HI-CART,2.5,3,14
+ECE344H1,Operating Systems,Paula Brown,GB-304,2.5,3,17
+ECE345H1,Algorithms & Data Structures,Lewis Cardenas,MY-150,2.5,1,18
+ECE349H1,Introduction To Energy Systems,Carlos Navarro,EX-200,2.5,3,36
+ECE352H1,Computer Organization,Michael Carignan,WB-119,2.5,3,15
+ECE355H1,Signal Analysis &Communication,William Morris,GB-304,2.5,3,34
+ECE358H1,Foundations Of Computing,Ruth Walsh,MY-315,2.5,3,2
+ECE360H1,Electronics,John Patterson,BA-2159,2.5,3,16
+ECE361H1,Computer Networks I,Bonnie Dills,ZZ-KNOX,2.5,3,26
+ECE367H1,Matrix Algebra & Optimization,Lawrence Ingram,MY-330,2.5,3,21
+ECE410H1,Linear Control Systems,Juliet Tuttle,BA-1130,2.5,3,1
+ECE417H1,Digit.Communication,Judy Smith,MY-150,2.5,1,17
+ECE421H1,Intro. To Machine Learning,James Bivins,BA-1130,2.5,3,35
+ECE424H1,Microwave Circuits,Lloyd Moisan,BA-2159,2.5,3,24
+ECE430H1,Analog Integrated Circuits,Gregory Watson,WB-119,2.5,3,17
+ECE431H1,Digital Signal Proc.,Mayra Cleckner,GB-304,2.5,1,34
+ECE444H1,Software Engineering,Katie Adams,GB-304,2.5,3,11
+ECE446H1,Sensory Communication,Christina Cochran,WB-219,2.5,3,7
+ECE454H1,Computer Systems Programming,Richard Cherry,EX-300,2.5,3,8
+ECE461H1,Internetworking,Richard Bradley,GB-304,2.5,3,1
+ECE467H1,Compilers And Interpreters,David Shelton,WB-130,2.5,3,24
+ECE470H1,Robot Modeling And Control,James Campbell,ZZ-KNOX,2.5,1,18
+ECE472H1,Eng.Eco.Ana.& Entre.,Heather Elman,MY-150,2.5,3,14
+ECE514H1,Power Electr. Converter Top.,Bruce Searby,HA-410,2.5,3,29
+ECE537H1,Random Processes,Jennifer Sheppard,WB-116,2.5,3,0
+ECE552H1,Computer Architecture,Carey Duncan,HA-401,2.5,3,4
+ECE557H1,Linear Control Theory,Sherry Myers,MY-315,2.5,3,13
+ECE568H1,Computer Security,Anthony Urie,MS-3153,2.5,3,32
+ESC101H1,Praxis I,Timothy Elam,APSCDept-ComputerLab,2.5,3,1
+ESC103H1,Eng. Mathematics & Computation,Rachel Haskins,BA-2159,2.5,3,8
+ESC180H1,Intro To Computer Programming,Karen Brown,MY-150,2.5,3,26
+ESC194H1,Calculus I,Joanne Warren,EX-100,2.5,3,30
+ESC203H1,Engineering And Society,Charlotte Thomas,APSCDept-ComputerLab,2.5,3,4
+ESC384H1,Partial Differential Equations,Barbara Slough,MY-315,2.5,3,5
+FOR308H1,Wood & Its Role In Soc. Dev.,Elsie Burgess,GB-303,2.5,3,15
+HPS283H1,The Engineer In History,Eric Birge,HI-CART,2.5,3,13
+JRE300H1,Fund. Of Accounting & Finance,Emma Goering,EX-200,2.5,3,24
+JRE410H1,Markets & Competitive Strategy,Ken Gordon,EX-310,2.5,3,12
+JRE420H1,People Mgmt. & Org. Behaviour,Kathy Mickey,HA-316,2.5,3,22
+MAT186H1,Calculus 1,Norma Daniels,BN-2N,2.5,3,9
+MAT188H1,App. Linear Algebra,Edward Rogers,EX-100,2.5,3,30
+MAT231H1,Model W/ Diff & Diff Eqns,Jaime Loffler,BA-1130,2.5,3,27
+MAT290H1,Advanced Eng. Mathematics,Edward Allen,MY-150,2.5,3,35
+MAT291H1,Calculus Iii,Edward Slater,EX-200,2.5,3,18
+MAT292H1,Ordinary Differential Equation,Marcia Martin,GB-303,2.5,3,10
+MAT294H1,Calculus & Diff Equ,Earl Mccanna,HA-316,2.5,1,5
+MAT389H1,Complex Analysis,Lori Peck,BA-1180,2.5,3,15
+MIE230H1,Engineering Analysis,Charlene Reese,BA-1160,2.5,3,33
+MIE231H1,Prob.&Stat. Eng. Applications,Matthew Northern,EX-200,2.5,3,21
+MIE236H1,Probability,Amy Cantrell,BA-2159,2.5,3,2
+MIE242H1,Psychology For Engineers,Richard Merritt,ZZ-VLAD,2.5,1,17
+MIE243H1,Mechanical Engineering Design,Sheryl Estes,GB-303,2.5,3,15
+MIE250H1,Fund. Of Object Oriented Prog.,John Vargas,SF-3202,2.5,2,31
+MIE258H1,Engineer.Economics &Accounting,Dortha White,EX-200,2.5,1,16
+MIE270H1,Materials Science,Ronald Montgomery,BA-2165,2.5,3,29
+MIE301H1,Kine.&Dynam.Of Mach.,Cathy Comstock,SF-2202,2.5,3,13
+MIE303H1,Mech.& Therm.Energy Con.Pro.,Barbara Tallerico,BA-2159,2.5,2,16
+MIE312H1,Fluid Mechanics I,Michael Williams,GB-303,2.5,2,26
+MIE342H1,Cir.With Appl.To Mech.Eng.Sys.,Sara Rhoden,EX-300,2.5,3,22
+MIE343H1,Indust.Ergo.& Workpl,Janie Willis,HA-403,2.5,3,31
+MIE350H1,Des.&Ana.Of Info.Sys,Deanna Vance,BA-1160,2.5,3,11
+MIE354H1,Business Process Engineering,Callie Schmitz,BA-2159,2.5,3,3
+MIE360H1,Sys.Modelling & Sim.,Jerome Adams,BA-1160,2.5,3,21
+MIE365H1,Operations Research Iii,Jill Walsh,APSCDept-ComputerLab,2.5,3,34
+MIE366H1,Electronics For Robotics,Bert Griffith,MP-102,2.5,3,8
+MIE375H1,Financial Engineering,Robert Holte,MY-330,2.5,3,16
+MIE404H1,Control Systems I,Dorothy Delaughter,BA-1160,2.5,1,30
+MIE407H1,Nuc. Reactor Theory & Design,Monica Renfro,MY-330,2.5,3,9
+MIE414H1,App. Fluid Mechanics,Charles Swisher,MY-380,2.5,3,21
+MIE422H1,Automa.Manufacturing,Rachel Brown,SF-2202,2.5,3,15
+MIE440H1,Design Of Innovative Products,Peter Johnson,MY-315,2.5,3,33
+MIE442H1,Machine Design,Hunter Reid,GB-304,2.5,3,32
+MIE444H1,Mechatronics Prin.,Christopher Balder,WB-116,2.5,2,22
+MIE451H1,Decision Support Sys,Jerald Hunt,HA-401,2.5,1,0
+MIE463H1,Integrated System Design,Maria Brus,EX-320,2.5,3,12
+MIE488H1,Entrepreneurship & Bus. - Eng.,Sandra Berg,WB-119,2.5,3,24
+MIE508H1,Fluids Of Biological Systems,Elizabeth Torres,WB-219,2.5,3,10
+MIE515H1,Alternative Energy Systems,Robert Stainback,EX-100,2.5,3,24
+MIE516H1,Combustion And Fuels,Alejandro Steinbach,WB-119,2.5,3,2
+MIE520H1,Biotransport Phenomena,Felicia Phillips,EX-310,2.5,3,35
+MIE523H1,Eng. Psychology & Human Perfor,Tia Bell,WB-119,2.5,3,35
+MIE562H1,Scheduling,Rebecca Cleghorn,WB-119,2.5,3,11
+MIE563H1,Engineering Analysis Ii,Janine Murphy,BA-2159,2.5,3,29
+MIE566H1,Decision Analysis,Louis Poggio,APSCDept-ComputerLab,2.5,3,15
+MIN225H1,Intro.To The Res.Ind,Maryann Finkel,MY-315,2.5,3,20
+MIN429H1,Engineering Rock Mechanics,Elizabeth Dozier,BA-2159,2.5,3,22
+MIN450H1,Mineral Economics,Patsy Williams,BA-2159,2.5,3,18
+MIN511H1,Integrated Mine Waste Eng.,Frank Helmick,EX-310,2.5,3,20
+MSE202H1,Thermodynamics I,Josefina Keen,BA-2165,2.5,1,20
+MSE219H1,Struc.& Characterization Mats.,Sara Williams,HI-CART,2.5,3,15
+MSE244H1,Inorganic Mat.Chem.&Processing,Robert Berner,WB-130,2.5,3,7
+MSE302H1,Thermodynamics Ii,Rachel Adair,EX-310,2.5,3,7
+MSE316H1,Mech.Behav.Of Mater.,Gerald Olive,BA-2165,2.5,3,23
+MSE332H1,Heat & Mass Trans. Mtrls.Proc.,George Deubler,BA-2195,2.5,3,13
+MSE343H1,Intro To Biomaterials,Russell Kingsbury,WB-119,2.5,3,21
+MSE401H1,Materials Selection In Design,Everett Stahlberg,HA-410,2.5,1,35
+MSE415H1,Env. Degradation Of Materials,Donald Blazejewski,WB-130,2.5,3,23
+MSE419H1,Fracture And Failure Analysis,Daniel Mitchell,MY-360,2.5,3,14
+MSE430H1,Electronic Materials,Benjamin Carbaugh,EX-320,2.5,2,35
+MSE437H1,Proc. Metallurgy Iron & Steel,Elwood Dixon,MY-380,2.5,3,21
+MSE440H1,Emerging Apps In Biomaterials,Martin Mefford,BA-1180,2.5,3,17
+MSE459H1,Synthesis Of Nanostruct. Mtrls,Clarence Wade,MY-380,2.5,3,2
+PHY180H1,Classical Mechanics,David Landres,MY-150,2.5,3,16
+PHY293H1,Waves And Modern Physics,Maria Colon,BA-1160,2.5,2,2
+ROB301H1,Introduction To Robotics,Antonio Mei,GB-304,2.5,2,13
+ROB310H1,Mathematics For Robotics,Derick Stride,BA-1160,2.5,2,0
+ROB501H1,Computer Vision For Robotics,Ericka Weston,GB-304,2.5,3,7
