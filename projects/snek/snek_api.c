@@ -38,7 +38,7 @@ Snek* init_snek(int a, int b){
 
 	snek->tail->next = NULL;
 	snek->head->next = snek->tail;
-	
+
 	snek->length = 1;
 
 	return snek;
@@ -70,7 +70,8 @@ int hits_self(int axis, int direction, GameBoard *gameBoard){
 }
 
 int time_out(){
-	return (MOOGLE_FLAG == 1 && CURR_FRAME > TIME_OUT);
+	// return (MOOGLE_FLAG == 1 && CURR_FRAME > TIME_OUT);
+	return 0;
 
 }
 
@@ -82,7 +83,7 @@ void populate_moogles(GameBoard *gameBoard){
 	if (MOOGLE_FLAG == 0){
 		int r1 = rand() % BOARD_SIZE;
 		int r2 = rand() % BOARD_SIZE;
-		
+
 		int r3 = rand() % (BOARD_SIZE * 10);
 		if (r3 == 0){
 			gameBoard->cell_value[r1][r2] = MOOGLE_POINT * HARRY_MULTIPLIER;
@@ -104,21 +105,34 @@ void eat_moogle(GameBoard* gameBoard, int head_x, int head_y) {
 	CURR_FRAME = 0;
 }
 
+// void try_turn_left(int axis, int direction, GameBoard *gameBoard) {
+// 	if (axis == AXIS_Y && direction == -1 && gameBoard->snek->head->coord[x] > (int)(BOARD_SIZE/2)) {
+// 		axis = AXIS_X;
+// 		head_x = gameBoard->snek->head->coord[x] + direction;
+// 		head_y = gameBoard->snek->head->coord[y];
+// 	}
+// }
+
 int advance_frame(int axis, int direction, GameBoard *gameBoard){
 	if (is_failure_state(axis, direction, gameBoard)){
 		return 0;
 	} else {
 		// update the occupancy grid and the snake coordinates
 		int head_x, head_y;
+		int snaking = 0;
 		// figure out where the head should now be
 		if (axis == AXIS_X) {
 			head_x = gameBoard->snek->head->coord[x] + direction;
 			head_y = gameBoard->snek->head->coord[y];
+
 		} else if (axis == AXIS_Y){
 			head_x = gameBoard->snek->head->coord[x];
 			head_y = gameBoard->snek->head->coord[y] + direction;
+
 		}
-		
+
+
+
 		int tail_x = gameBoard->snek->tail->coord[x];
 		int tail_y = gameBoard->snek->tail->coord[y];
 
@@ -134,7 +148,7 @@ int advance_frame(int axis, int direction, GameBoard *gameBoard){
 			gameBoard->snek->head->coord[x] = head_x;
 			gameBoard->snek->head->coord[y] = head_y;
 			gameBoard->snek->head->next = newBlock;
-	
+
 			if (gameBoard->cell_value[head_y][head_x] > 0){  //eat something
 				eat_moogle(gameBoard, head_x, head_y);
 			} else { //did not eat
@@ -156,7 +170,7 @@ int advance_frame(int axis, int direction, GameBoard *gameBoard){
 			gameBoard->snek->head->coord[y] = head_y;
 			gameBoard->snek->tail->coord[x] = head_x;
 			gameBoard->snek->tail->coord[y] = head_y;
-			
+
 		} else { //snake is length 1 and eats something
 			eat_moogle(gameBoard, head_x, head_y);
 			gameBoard->snek->head->coord[x] = head_x;
@@ -172,13 +186,13 @@ int advance_frame(int axis, int direction, GameBoard *gameBoard){
 		// populate moogles
 		populate_moogles(gameBoard);
 		return 1;
-	} 
+	}
 }
 
 void show_board(GameBoard* gameBoard) {
 	fprintf(stdout, "\033[2J"); // clear terminal ANSI code
 	fprintf(stdout, "\033[0;0H"); // reset cursor position
-	
+
 	char blank = 	43;
 	char snek = 	83;
 	char moogle = 	88;
@@ -197,11 +211,11 @@ void show_board(GameBoard* gameBoard) {
 			}
 		} //new line
 		fprintf(stdout, "\n");
-		
+
 	}
 
 	fprintf(stdout, "\n\n");
-	
+
 	if (MOOGLE_FLAG == 1){
 		fprintf(stdout, "!..ALERT, MOOGLE IN VICINITY..!\n\n");
 	}
@@ -222,8 +236,8 @@ int get_score() {
 }
 
 void end_game(GameBoard **board){
-	//fprintf(stdout, "\033[2J");
-	//fprintf(stdout, "\033[0;0H"); 
+	// fprintf(stdout, "\033[2J");
+	// fprintf(stdout, "\033[0;0H");
 	fprintf(stdout, "\n\n\n--!!---GAME OVER---!!--\n\nYour score: %d\n\n\n\n", SCORE);
 	fflush(stdout);
 	// need to free all allocated memory
