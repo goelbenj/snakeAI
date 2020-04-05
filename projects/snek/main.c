@@ -9,32 +9,59 @@ void play_game() {
 
 	int axis = AXIS_INIT;
 	int direction = DIR_INIT;
-	
+
 	int play_on = 1;
 	int coord[2];
-	
+
 	while (play_on){
 		coord[x] = board->snek->head->coord[x];
 		coord[y] = board->snek->head->coord[y];
 		unsigned short go_x = (axis == AXIS_Y && direction == 1 && coord[y] == (BOARD_SIZE - 1)) || (axis == AXIS_Y && direction == -1 && coord[y] == 0);
 		unsigned short go_y = (axis == AXIS_X && direction == 1 && coord[x] == (BOARD_SIZE - 1)) || (axis == AXIS_X && direction == -1 && coord[x] == 0);
+
+		//TURNING
+		if (axis == AXIS_Y && direction == UP  && board->snek->head->coord[y] != (BOARD_SIZE-1) && board->snek->head->coord[x] != 1) {
+			//&& gameBoard->snek->head->coord[x] > (int)(BOARD_SIZE/2)
+			axis = AXIS_X;
+			direction = LEFT;
+		}
+		if (axis == AXIS_Y && direction == UP  && board->snek->head->coord[x] == 1) {
+			axis = AXIS_X;
+			direction = RIGHT;
+		}
+		if (axis == AXIS_X && direction == LEFT  && board->snek->head->coord[x] == 1) {
+			//&& gameBoard->snek->head->coord[x] > (int)(BOARD_SIZE/2)
+			if ( board->snek->head->coord[y] != 0) {
+				axis = AXIS_Y;
+				direction = UP;
+			}
+		}
+
+		printf("Barrier Status: %d %d\n", go_x, go_y);
+
 		if (go_x) {
 			// going to hit the bottom or top
 			// go right or left
 			axis = AXIS_X;
-			if (coord[x] < (int)(BOARD_SIZE / 2)){ 
+			if (coord[x] < (int)(BOARD_SIZE / 2)){
 				direction = RIGHT;
 			} else {
 				direction = LEFT;
 			}
 		} else if (go_y) {
 			axis = 	AXIS_Y;
-			if (coord[y] < (int)(BOARD_SIZE / 2)){ 
-				direction = DOWN;
+			if (coord[y] < (int)(BOARD_SIZE / 2)){
+				direction = UP;
 			} else {
 				direction = UP;
 			}
 		}
+
+		if (board->snek->head->coord[y] == 0 && board->snek->head->coord[x] == 0) {
+			axis = AXIS_Y;
+			direction = DOWN;
+		}
+
 		show_board(board);
 		play_on = advance_frame(axis, direction, board);
 		printf("Going ");
@@ -47,12 +74,12 @@ void play_game() {
 			}
 		} else {
 			if (direction == UP){
-				printf("UP");
+				printf("UP\n\n\n");
 			} else {
-				printf("DOWN");
+				printf("DOWN\n\n\n");
 			}
 		} printf("\n");
-		usleep(555550);
+		usleep(55550);
 	}
 	end_game(&board);
 
