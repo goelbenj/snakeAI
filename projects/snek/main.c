@@ -20,22 +20,9 @@ void play_game() {
 		unsigned short go_y = (axis == AXIS_X && direction == 1 && coord[x] == (BOARD_SIZE - 1)) || (axis == AXIS_X && direction == -1 && coord[x] == 0);
 
 		//TURNING
-		if (axis == AXIS_Y && direction == UP  && board->snek->head->coord[y] != (BOARD_SIZE-1) && board->snek->head->coord[x] != 1) {
-			//&& gameBoard->snek->head->coord[x] > (int)(BOARD_SIZE/2)
-			axis = AXIS_X;
-			direction = LEFT;
-		}
-		if (axis == AXIS_Y && direction == UP  && board->snek->head->coord[x] == 1) {
-			axis = AXIS_X;
-			direction = RIGHT;
-		}
-		if (axis == AXIS_X && direction == LEFT  && board->snek->head->coord[x] == 1) {
-			//&& gameBoard->snek->head->coord[x] > (int)(BOARD_SIZE/2)
-			if ( board->snek->head->coord[y] != 0) {
-				axis = AXIS_Y;
-				direction = UP;
-			}
-		}
+		int *p = turn_snake(axis, direction, board);
+		axis = p[0];
+		direction = p[1];
 
 		printf("Barrier Status: %d %d\n", go_x, go_y);
 
@@ -79,7 +66,7 @@ void play_game() {
 				printf("DOWN\n\n\n");
 			}
 		} printf("\n");
-		usleep(55550);
+		usleep(15550);
 	}
 	end_game(&board);
 

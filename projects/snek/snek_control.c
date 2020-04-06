@@ -1,6 +1,6 @@
 #include "snek_api.h"
 
-int turn_snake(int axis, int direction, GameBoard *board) {
+int *turn_snake(int axis, int direction, GameBoard *board) {
   if (axis == AXIS_Y && direction == UP  && board->snek->head->coord[y] != (BOARD_SIZE-1) && board->snek->head->coord[x] != 1) {
     //&& gameBoard->snek->head->coord[x] > (int)(BOARD_SIZE/2)
     axis = AXIS_X;
@@ -17,6 +17,8 @@ int turn_snake(int axis, int direction, GameBoard *board) {
       direction = UP;
     }
   }
-  int movement_data[2] = {axis, direction};
-  return movement_data;
+  static int movement[2];
+  movement[0] = axis;
+  movement[1] = direction;
+  return movement;
 }

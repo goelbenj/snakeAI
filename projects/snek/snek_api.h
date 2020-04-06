@@ -1,6 +1,6 @@
 /**
 AUTHOR: SAIMA ALI
-LATEST WORKING VERSION 
+LATEST WORKING VERSION
 FEBRUARY 2ND, 2020
 ESC190H1S PROJECT
 SNAKE API
@@ -62,4 +62,4 @@ int advance_frame(int axis, int direction,  GameBoard *gameBoard);
 void end_game(GameBoard **board);
 void show_board(GameBoard* gameBoard);
 int get_score();
-
+int *turn_snake(int axis, int direction, GameBoard *board);
