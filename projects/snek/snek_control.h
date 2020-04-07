@@ -8,6 +8,8 @@ typedef struct Node{
   struct Node * next;
 } Node;
 
+int *turn_snake(int axis, int direction, int moogle_pos, GameBoard *board);
+int find_moogle(GameBoard *board);
 Node *create_direction_sequence(int axis, int direction);
 void add_move(int axis, int direction, Node *head);
 void delete_direction_sequence(Node *head);

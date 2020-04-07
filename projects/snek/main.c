@@ -17,11 +17,20 @@ void play_game() {
 	while (play_on){
 		coord[x] = board->snek->head->coord[x];
 		coord[y] = board->snek->head->coord[y];
-		unsigned short go_x = (axis == AXIS_Y && direction == 1 && coord[y] == (BOARD_SIZE - 1)) || (axis == AXIS_Y && direction == -1 && coord[y] == 0);
+		//|| (axis == AXIS_Y && direction == -1 && coord[y] == 0)
+		unsigned short go_x = (axis == AXIS_Y && direction == 1 && coord[y] == (BOARD_SIZE - 1)) ;
 		unsigned short go_y = (axis == AXIS_X && direction == 1 && coord[x] == (BOARD_SIZE - 1)) || (axis == AXIS_X && direction == -1 && coord[x] == 0);
 
+		//FIND MOOGLE
+		int moogle_pos = find_moogle(board);
+		if (moogle_pos != BOARD_SIZE) {
+			printf("MOOGLE X-COORD: %d\n", moogle_pos);
+		} else {
+			printf("MOOGLE NOT FOUND\n");
+		}
+
 		//TURNING
-		int *p = turn_snake(axis, direction, board);
+		int *p = turn_snake(axis, direction, moogle_pos, board);
 		axis = p[0];
 		direction = p[1];
 
@@ -51,9 +60,10 @@ void play_game() {
 		}
 
 		show_board(board);
+
 		play_on = advance_frame(axis, direction, board);
 		// printf("Going ");
-
+		//
 		// if (axis == AXIS_X){
 		// 	if (direction == RIGHT){
 		// 		printf("RIGHT");
@@ -67,7 +77,8 @@ void play_game() {
 		// 		printf("DOWN\n\n\n");
 		// 	}
 		// } printf("\n");
-		usleep(25550);
+		usleep(550);
+		// usleep(555550*0.1);
 	}
 	end_game(&board);
 	CURR_FRAME = 0;
@@ -75,8 +86,8 @@ void play_game() {
 }
 
 void output_scores() {
-  FILE *output_stream = fopen("hamiltonianV1.txt","w");
-	for (int i = 0; i < 1; i++) {
+  FILE *output_stream = fopen("hamiltonianV2.txt","w");
+	for (int i = 0; i < 10; i++) {
 		play_game();
 		fprintf(output_stream, "%d\n", SCORE);
 		SCORE = 0;

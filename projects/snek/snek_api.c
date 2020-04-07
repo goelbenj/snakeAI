@@ -8,8 +8,8 @@ int CURR_FRAME = 0;
 int SCORE = 0;
 int MOOGLE_FLAG = 0;
 int MOOGLES_EATEN = 0;
-// int TIME_OUT = ((BOARD_SIZE * 4) - 4) * CYCLE_ALLOWANCE;
-int TIME_OUT = BOARD_SIZE*BOARD_SIZE;
+int TIME_OUT = ((BOARD_SIZE * 4) - 4) * CYCLE_ALLOWANCE;
+// int TIME_OUT = BOARD_SIZE*BOARD_SIZE;
 
 GameBoard* init_board(){
 	srand(time(0));
@@ -89,7 +89,7 @@ void populate_moogles(GameBoard *gameBoard){
 		if (r3 == 0){
 			gameBoard->cell_value[r1][r2] = MOOGLE_POINT * HARRY_MULTIPLIER;
 			MOOGLE_FLAG = 1;
-		} else if (r3 < BOARD_SIZE){
+		} else if (r3 < BOARD_SIZE && gameBoard->occupancy[r1][r2] != 1){
 			gameBoard->cell_value[r1][r2] = MOOGLE_POINT;
 			MOOGLE_FLAG = 1;
 		}

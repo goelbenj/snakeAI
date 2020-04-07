@@ -62,4 +62,3 @@ int advance_frame(int axis, int direction,  GameBoard *gameBoard);
 void end_game(GameBoard **board);
 void show_board(GameBoard* gameBoard);
 int get_score();
-int *turn_snake(int axis, int direction, GameBoard *board);
