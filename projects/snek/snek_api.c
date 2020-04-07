@@ -8,7 +8,8 @@ int CURR_FRAME = 0;
 int SCORE = 0;
 int MOOGLE_FLAG = 0;
 int MOOGLES_EATEN = 0;
-int TIME_OUT = ((BOARD_SIZE * 4) - 4) * CYCLE_ALLOWANCE;
+// int TIME_OUT = ((BOARD_SIZE * 4) - 4) * CYCLE_ALLOWANCE;
+int TIME_OUT = BOARD_SIZE*BOARD_SIZE;
 
 GameBoard* init_board(){
 	srand(time(0));
@@ -70,8 +71,8 @@ int hits_self(int axis, int direction, GameBoard *gameBoard){
 }
 
 int time_out(){
-	// return (MOOGLE_FLAG == 1 && CURR_FRAME > TIME_OUT);
-	return 0;
+	return (MOOGLE_FLAG == 1 && CURR_FRAME > TIME_OUT);
+	// return 0;
 
 }
 
@@ -190,8 +191,10 @@ int advance_frame(int axis, int direction, GameBoard *gameBoard){
 }
 
 void show_board(GameBoard* gameBoard) {
-	fprintf(stdout, "\033[2J"); // clear terminal ANSI code
-	fprintf(stdout, "\033[0;0H"); // reset cursor position
+	// fprintf(stdout, "\033[2J"); // clear terminal ANSI code
+	// fprintf(stdout, "\033[0;0H"); // reset cursor position
+	fprintf(stdout, "\0"); // clear terminal ANSI code
+	fprintf(stdout, "\0"); // reset cursor position
 
 	char blank = 	43;
 	char snek = 	83;
@@ -216,9 +219,9 @@ void show_board(GameBoard* gameBoard) {
 
 	fprintf(stdout, "\n\n");
 
-	if (MOOGLE_FLAG == 1){
-		fprintf(stdout, "!..ALERT, MOOGLE IN VICINITY..!\n\n");
-	}
+	// if (MOOGLE_FLAG == 1){
+	// 	fprintf(stdout, "!..ALERT, MOOGLE IN VICINITY..!\n\n");
+	// }
 	fprintf(stdout, "SCORE: %d\n", SCORE);
 	fprintf(stdout, "YOU HAVE EATEN %d MOOGLES\n\n", MOOGLES_EATEN);
 

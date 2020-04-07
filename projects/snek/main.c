@@ -1,4 +1,5 @@
 #include "snek_api.h"
+#include "snek_control.h"
 #include <unistd.h>
 
 void play_game() {
@@ -24,7 +25,7 @@ void play_game() {
 		axis = p[0];
 		direction = p[1];
 
-		printf("Barrier Status: %d %d\n", go_x, go_y);
+		// printf("Barrier Status: %d %d\n", go_x, go_y);
 
 		if (go_x) {
 			// going to hit the bottom or top
@@ -51,28 +52,41 @@ void play_game() {
 
 		show_board(board);
 		play_on = advance_frame(axis, direction, board);
-		printf("Going ");
+		// printf("Going ");
 
-		if (axis == AXIS_X){
-			if (direction == RIGHT){
-				printf("RIGHT");
-			} else {
-				printf("LEFT");
-			}
-		} else {
-			if (direction == UP){
-				printf("UP\n\n\n");
-			} else {
-				printf("DOWN\n\n\n");
-			}
-		} printf("\n");
-		usleep(15550);
+		// if (axis == AXIS_X){
+		// 	if (direction == RIGHT){
+		// 		printf("RIGHT");
+		// 	} else {
+		// 		printf("LEFT");
+		// 	}
+		// } else {
+		// 	if (direction == UP){
+		// 		printf("UP\n\n\n");
+		// 	} else {
+		// 		printf("DOWN\n\n\n");
+		// 	}
+		// } printf("\n");
+		usleep(25550);
 	}
 	end_game(&board);
+	CURR_FRAME = 0;
+	MOOGLE_FLAG = 0;
+}
 
+void output_scores() {
+  FILE *output_stream = fopen("hamiltonianV1.txt","w");
+	for (int i = 0; i < 1; i++) {
+		play_game();
+		fprintf(output_stream, "%d\n", SCORE);
+		SCORE = 0;
+
+	}
+	fclose(output_stream);
 }
 
 int main(){
-	play_game();
+	// int scores[100];
+	output_scores();
 	return 0;
 }
