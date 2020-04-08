@@ -14,7 +14,8 @@ int *turn_snake(int axis, int direction, int moogle_pos, GameBoard *board) {
     movement[1] = LEFT;
     return movement;
   }
-  if (board->snek->head->coord[x] == moogle_pos && board->snek->length < 30 && board->snek->head->coord[y] != 0 && board->snek->head->coord[x] != 0) {
+  //&& board->snek->length < 30
+  if (board->snek->head->coord[x] == moogle_pos && board->snek->head->coord[y] != 0 && board->snek->head->coord[x] != 0) {
     movement[0] = AXIS_Y;
     movement[1] = UP;
     return movement;

@@ -241,7 +241,8 @@ int get_score() {
 void end_game(GameBoard **board){
 	// fprintf(stdout, "\033[2J");
 	// fprintf(stdout, "\033[0;0H");
-	fprintf(stdout, "\n\n\n--!!---GAME OVER---!!--\n\nYour score: %d\n\n\n\n", SCORE);
+	fprintf(stdout, "\n\n\n--!!---GAME OVER---!!--\n\nYour score: %d\nYou have eaten %d moogles\n\n\n", SCORE, MOOGLES_EATEN);
+	MOOGLES_EATEN = 0;
 	fflush(stdout);
 	// need to free all allocated memory
 	// first snek

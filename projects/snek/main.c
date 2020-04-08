@@ -3,10 +3,10 @@
 #include <unistd.h>
 
 void play_game() {
-	printf("starting\n");
+	// printf("starting\n");
 	//board initialized, struct has pointer to snek
 	GameBoard* board = init_board();
-	show_board(board);
+	// show_board(board);
 
 	int axis = AXIS_INIT;
 	int direction = DIR_INIT;
@@ -23,11 +23,11 @@ void play_game() {
 
 		//FIND MOOGLE
 		int moogle_pos = find_moogle(board);
-		if (moogle_pos != BOARD_SIZE) {
-			printf("MOOGLE X-COORD: %d\n", moogle_pos);
-		} else {
-			printf("MOOGLE NOT FOUND\n");
-		}
+		// if (moogle_pos != BOARD_SIZE) {
+		// 	printf("MOOGLE X-COORD: %d\n", moogle_pos);
+		// } else {
+		// 	printf("MOOGLE NOT FOUND\n");
+		// }
 
 		//TURNING
 		int *p = turn_snake(axis, direction, moogle_pos, board);
@@ -59,8 +59,10 @@ void play_game() {
 			direction = DOWN;
 		}
 
-		show_board(board);
-
+		// show_board(board);
+		fprintf(stdout, "\0"); // clear terminal ANSI code
+		fprintf(stdout, "\0");
+		fflush(stdout);
 		play_on = advance_frame(axis, direction, board);
 		// printf("Going ");
 		//
@@ -87,7 +89,8 @@ void play_game() {
 
 void output_scores() {
   FILE *output_stream = fopen("hamiltonianV2.txt","w");
-	for (int i = 0; i < 10; i++) {
+	fprintf(output_stream, "%s\n", "Scores");
+	for (int i = 0; i < 100; i++) {
 		play_game();
 		fprintf(output_stream, "%d\n", SCORE);
 		SCORE = 0;
